@@ -1,3 +1,8 @@
-theme: jekyll-theme-minimal
 title: Mobile Delphi
 description: Conteúdo sobre Desenvolvimento de Aplicativos Mobile usando Delphi
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+
