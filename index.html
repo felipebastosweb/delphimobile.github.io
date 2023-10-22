@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<!--
 <section id="product_list" class="container">
   <section class="row">
     <header class="col-12">
@@ -9,13 +10,14 @@ layout: default
     <article class="col-12"></article>
   </section>
 </section>
+-->
 <section id="project_list" class="container">
   <section class="row">
     <header class="col-12">
       <h5>Projects</h5>
     </header>
     {% for project in site.posts %}
-    <article class="col-6">
+    <article class="col-xs-12 col-sm-6 col-md-4">
       <div class="card">
         <div class="card-body">
           <h5 class="car-title"><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h5>
@@ -26,6 +28,7 @@ layout: default
     {% endfor %} 
   </section>
 </section>
+<!--
 <section id="post_list" class="container">
   <section class="row">
     <header class="col-12">
@@ -34,3 +37,4 @@ layout: default
     <article class="col-12"></article>
   </section>
 </section>
+-->
