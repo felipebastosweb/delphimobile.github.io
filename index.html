@@ -4,7 +4,7 @@ layout: default
 <section id="project_list" class="container">
   <section class="row">
     <header class="col-12">
-      <h5>Projects</h5>
+      <h5><a name="projects">Projects</a></h5>
     </header>
     {% for project in site.posts %}
     <article class="col-xs-12 col-sm-6 col-md-4">
@@ -17,11 +17,10 @@ layout: default
           </h6>
           <p class="card-text" style="height:80px;">{{ project.description}}</p>
         </div>
-        <!--
         <div class="card-footer">
+          <a href="#" class="card-link"><i class="bi bi-shop"></i></a>
           <a href="{{ project.author.mail }}?subject=Vi seu projeto {{ project.title }}" target="_blank" class="btn"><i class="class="bi bi-envelope"></i></a>
         </div>
-        -->
       </div>
     </article>
     {% endfor %} 
