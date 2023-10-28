@@ -15,11 +15,13 @@ layout: default
             <a href="{{ project.author.blog }}" target="_blank">{{ project.author.github}}</a><br />
             Postado em <span>{{ project.date | date_to_long_string }}</span>
           </h6>
-          <p class="card-text">{{ project.description}}</p>
+          <p class="card-text" style="height:80px;">{{ project.description}}</p>
         </div>
+        <!--
         <div class="card-footer">
           <a href="{{ project.author.mail }}?subject=Vi seu projeto {{ project.title }}" target="_blank" class="btn"><i class="class="bi bi-envelope"></i></a>
         </div>
+        -->
       </div>
     </article>
     {% endfor %} 
