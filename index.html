@@ -1,16 +1,6 @@
 ---
 layout: default
 ---
-<!--
-<section id="product_list" class="container">
-  <section class="row">
-    <header class="col-12">
-      <h5>Products in Store</h5>
-    </header>
-    <article class="col-12"></article>
-  </section>
-</section>
--->
 <section id="project_list" class="container">
   <section class="row">
     <header class="col-12">
@@ -21,20 +11,15 @@ layout: default
       <div class="card">
         <div class="card-body">
           <h5 class="car-title"><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">{{ post.date | date_to_long_string }}</h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary">
+            <a href="#" target="_blank">{{ project.author.name}}</a> in
+            <span>{{ project.date | date_to_long_string }}</span>
+          </h6>
+          <p class="card-text">{{ project.description}}</p>
         </div>
+        <div class="card-footer"></div>
       </div>
     </article>
     {% endfor %} 
   </section>
 </section>
-<!--
-<section id="post_list" class="container">
-  <section class="row">
-    <header class="col-12">
-      <h5>Posts</h5>
-    </header>
-    <article class="col-12"></article>
-  </section>
-</section>
--->
