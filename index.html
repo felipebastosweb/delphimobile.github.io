@@ -18,8 +18,12 @@ layout: default
           <p class="card-text" style="height:80px;">{{ project.description}}</p>
         </div>
         <div class="card-footer">
-          <a href="#" class="card-link"><i class="bi bi-shop"></i></a>
-          <a href="{{ project.author.mail }}?subject=Vi seu projeto {{ project.title }}" target="_blank" class="btn"><i class="class="bi bi-envelope"></i></a>
+          <a href="{{ project.url | prepend: site.baseurl }}" class="card-link">
+            <i class="bi bi-shop"></i>
+          </a>
+          <a href="{{ project.author.mail }}?subject=Vi seu projeto {{ project.title }}" target="_blank" class="card-link">
+            <i class="bi bi-envelope"></i>
+          </a>
         </div>
       </div>
     </article>
