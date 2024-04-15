@@ -1,27 +1,27 @@
 ---
 layout: default
 ---
-<section id="project_list" class="container">
+<section id="post_list" class="container">
   <section class="row">
     <header class="col-12">
-      <h5><a name="projects">Projects</a></h5>
+      <h5><a name="posts">Posts</a></h5>
     </header>
-    {% for project in site.posts %}
-    <article class="col-xs-12 col-sm-6 col-md-4">
+    {% for post in site.posts %}
+    <article class="col-12">
       <div class="card">
         <div class="card-body">
-          <h5 class="car-title"><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h5>
+          <h5 class="car-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">
-            <a href="{{ project.author.blog }}" target="_blank">{{ project.author.github}}</a><br />
-            Postado em <span>{{ project.date | date_to_long_string }}</span>
+            <a href="{{ post.author.blog }}" target="_blank">{{ post.author.github}}</a><br />
+            Postado em <span>{{ post.date | date_to_long_string }}</span>
           </h6>
-          <p class="card-text" style="height:80px;">{{ project.description}}</p>
+          <p class="card-text" style="height:80px;">{{ post.description}}</p>
         </div>
         <div class="card-footer">
-          <a href="{{ project.url | prepend: site.baseurl }}" class="card-link">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="card-link">
             <i class="bi bi-shop"></i>
           </a>
-          <a href="{{ project.author.mail }}?subject=Vi seu projeto {{ project.title }}" target="_blank" class="card-link">
+          <a href="{{ post.author.mail }}?subject=Vi seu post {{ post.title }} e gostaria de .." target="_blank" class="card-link">
             <i class="bi bi-envelope"></i>
           </a>
         </div>
