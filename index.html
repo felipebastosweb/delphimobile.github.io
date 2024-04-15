@@ -15,7 +15,7 @@ layout: default
             <a href="{{ post.author.blog }}" target="_blank">{{ post.author.github}}</a><br />
             Postado em <span>{{ post.date | date_to_long_string }}</span>
           </h6>
-          <p class="card-text" style="height:80px;">{{ post.description}}</p>
+          <p class="card-text">{{ post.description}}</p>
         </div>
         <div class="card-footer">
           <a href="{{ post.url | prepend: site.baseurl }}" class="card-link">
