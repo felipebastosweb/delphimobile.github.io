@@ -7,7 +7,7 @@ layout: default
       <h5><a name="posts">Posts</a></h5>
     </header>
     {% for post in site.posts %}
-    <article class="col-12">
+    <article class="col-12" style="margin-bottom: 5px;">
       <div class="card">
         <div class="card-body">
           <h5 class="car-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
